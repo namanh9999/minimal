@@ -1,15 +1,23 @@
 ---
 layout: default
+title: Cats Gallery
 ---
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
 
-<center>
-    <h1> Welcome to picture page</h1>
-</center>
+# 🐱 Cat Gallery
+
+<div style="
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:20px;
+">
+
+{% assign cat_images = site.static_files | where_exp: "file", "file.path contains '/assets/img/cat/'" %}
+
+{% for image in cat_images %}
+  <img src="{{ image.path }}"
+       style="width:100%; border-radius:14px;">
+{% endfor %}
+
+</div>
 
 [back](./)
