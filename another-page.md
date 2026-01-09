@@ -14,8 +14,9 @@ title: Cats Gallery
 {% assign cat_images = site.static_files | where_exp: "file", "file.path contains '/assets/img/Cat/'" %}
 
 {% for image in cat_images %}
-<img src="{{ site.baseurl }}{{ image.path }}", loading="crazy",
-style="width:100%; border-radius:14px;">
+  <img src="{{ site.baseurl }}{{ image.path }}"
+       loading="lazy"
+       style="width:100%; border-radius:14px;">
 {% endfor %}
 
 </div>
