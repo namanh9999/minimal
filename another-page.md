@@ -11,7 +11,7 @@ title: Cats Gallery
   gap:20px;
 ">
 
-{% assign cat_images = site.static_files | where_exp: "file", "file.path contains '/assets/img/cat/'" %}
+{% assign cat_images = site.static_files | where_exp: "file", "file.path contains '/assets/img/Cat/'" %}
 
 {% for image in cat_images %}
   <img src="{{ image.path }}"
