@@ -1,6 +1,6 @@
-title: Minimal theme
+title: Bl4D3
 logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
+description: This is my page used to share something.
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
