@@ -18,7 +18,8 @@ title: Cats Gallery
        loading="lazy"
        style="width:100%; border-radius:14px;">
 {% endfor %}
-
 </div>
+<br>
+<br>
 
-[back](./)
+[<center>back to home page</center>](./)

@@ -4,7 +4,9 @@ layout: default
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
+[Cat Gallery](./MyChildren.html).
+[Story](./TheStory.html).
+[Nature](./TheNature.html).
 
 There should be whitespace between paragraphs.
 
